@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { color: white; font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="main-body">
+    <div class="nft-card">
+      <img class="nft-card__image" src="/images/image-equilibrium.jpg">
+      
+      <h3 class="nft-card__text nft-card__header">Equilibrium #3429</h3>
+      <p class="nft-card__text nft-card__description">Our Equilibrium collection promotes balance and calm.</p>
+      <div class="nft-card__details">
+        <div id="eth-total" class="center-elements">
+          <img class="eth-total__icon" src="/images/icon-ethereum.svg">
+          <span class="eth-total__amount">0.041 ETH</span>
+        </div>
+
+        <div id="time-remaining" class="center-elements">
+          <img class="time-remaining__icon" src="/images/icon-clock.svg">
+          <span class="time-remaining__amount" >3 days left</span>
+        </div>
+      </div>
+
+      <div class="nft-card__hr"></div>
+
+      <div class="nft-card__user">
+        <img src="/images/image-avatar.png" class="nft-card__user--avatar">
+        <span class="nft-card__user--cb lighter">Creation of <span class="light">Brent Deaver</span></span>
+      </div>
+    </img>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Brent Deaver</a>.
+  </div>
+</body>
+</html>
