@@ -1,0 +1,148 @@
+html, body {
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-size: 10px;
+    font-family: 'Overpass', sans-serif;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    background-color: hsl(216, 12%, 8%);
+    position: relative;
+}
+
+.card {
+    height: 21rem;
+    width: 24rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    perspective: 1000px;
+}
+
+
+.inner-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+
+.card-front, .card-back {
+    position: absolute;
+    border-radius: 2rem;
+    padding: 2rem;
+    height: 100%;
+    background-color: hsl(213, 19%, 18%);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.rotate-card {
+    transform: rotateY(180deg);
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    align-items: center;
+}
+  
+.fav-icon-wrapper {
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 23%);
+    height: max-content;
+    width: max-content;
+}
+
+.header {
+    color: white;
+    font-size: 1.6rem;
+    margin-bottom: .8rem;
+    margin-top: 0;
+}
+
+.sub-text {
+    color: hsl(217, 12%, 63%);
+    font-size: 1rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 1.5rem
+}
+
+.rating-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rating-options > div  {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 23%);
+    color: white;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 1rem;
+    opacity: .5;
+}
+
+.rating-options > div:hover {
+    background-color: hsl(217, 12%, 63%);
+    opacity: 1;
+    cursor: pointer;
+}
+
+.option-selected {
+    opacity: 1 !important;
+    background-color: hsl(25, 97%, 53%) !important;
+}
+
+.submit-btn {
+    border: none;
+    background: hsl(25, 97%, 53%);
+    border-radius: 20px;
+    padding: .9rem;
+    color: white;
+    font-weight: 500;
+    line-height: .8rem;
+    letter-spacing: .1rem;
+}
+
+.submit-btn:hover {
+    background: white;
+    color: hsl(25, 97%, 53%);
+    cursor: pointer;
+} 
+
+.rating-container {
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(213, 19%, 23%);
+    padding: .6rem 1rem;
+    border-radius: 25px;
+    font-size: 13px;
+}
+
+.text-container {
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    .card {
+        height: 20rem;
+        width: 21rem;
+    }
+}
